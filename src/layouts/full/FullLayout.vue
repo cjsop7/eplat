@@ -3,8 +3,9 @@ import { RouterView } from "vue-router";
 import { ref, onMounted } from "vue";
 import SidebarVue from "./sidebar/Sidebar.vue";
 import HeaderVue from "./header/Header.vue";
+import FooterVue from "./footer/Footer.vue"
 
-const drawer = ref(undefined || true);
+const drawer = ref(undefined || false);
 const innerW = window.innerWidth;
 
 onMounted(() => {
@@ -34,20 +35,23 @@ onMounted(() => {
     <!---Header -->
     <!-- ---------------------------------------------- -->
     <v-app-bar elevation="0" class="v-topbar">
-      <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer" />
+      <!--attr removed from v-app-bar-nav-icon === class="hidden-md-and-up" -->
+      <v-app-bar-nav-icon @click="drawer = !drawer"/>
       <v-spacer />
       <!-- ---------------------------------------------- -->
       <!-- User Profile -->
       <!-- ---------------------------------------------- -->
       <HeaderVue />
+      <v-spacer />
     </v-app-bar>
 
     <!-- ---------------------------------------------- -->
     <!---Page Wrapper -->
     <!-- ---------------------------------------------- -->
     <v-main>
-      <v-container fluid class="page-wrapper">
+      <v-container fluid class="page-wrapper pa-0">
         <RouterView />
+        <FooterVue />
       </v-container>
     </v-main>
   </v-app>

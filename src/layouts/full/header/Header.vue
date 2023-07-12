@@ -7,6 +7,10 @@ const userprofile = ref(profile);
 
 <template>
   <div>
+    <v-btn>Introduction</v-btn>
+    <v-btn>My Page</v-btn>
+    <v-btn>Program</v-btn>
+    <v-btn>Support</v-btn>
     <!-- ---------------------------------------------- -->
     <!-- User Profile -->
     <!-- ---------------------------------------------- -->

@@ -6,9 +6,15 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      redirect: "/dashboard",
+      redirect: "/home",
       component: () => import("@/layouts/full/FullLayout.vue"),
       children: [
+        {
+          name: "Home",
+          path: "/home",
+          component: () =>
+            import("@/views/Home.vue"),
+        },
         {
           name: "Dashboard",
           path: "/dashboard",
