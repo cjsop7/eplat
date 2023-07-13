@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-card>
-            <v-card-title class="text-h4 ml-2 mt-2">회사 소개<v-spacer/>English Platform<v-spacer/></v-card-title>
+            <v-card-title class="text-h4 ml-2 mt-2 "><a class="font-weight-bold">회사 소개</a><v-spacer/><a style="color: red;">E</a>nglish&nbsp;<span style="color: red;"> Plat</span>form<v-spacer/></v-card-title>
             <v-card-text>
                 <v-container class="pa-2" elevation="0">
                     <v-row v-for="item in items" :key="item.title">
@@ -11,8 +11,8 @@
                             </v-container>
                         </v-col>
                         <v-col cols="10" class="pl-5">
-                            <br>
-                            <span class="text-h6">{{item.title}}</span><br>
+                            <br/>
+                            <span class="text-h6">{{item.title}}</span><br/>
                             <span class="text-body-2">{{ item.content }}</span>
                         </v-col>
                     </v-row>
@@ -21,15 +21,15 @@
             </v-card-text>
         </v-card>
         <v-card class="mt-5">
-            <v-card-title class="text-h4 ml-2 mt-2">연혁<v-spacer/>English Platform<v-spacer/></v-card-title>
+            <v-card-title class="text-h4 ml-2 mt-2"><a class="font-weight-bold">연혁</a><v-spacer/><a style="color: red;">E</a>nglish&nbsp;<span style="color: red;"> Plat</span>form<v-spacer/></v-card-title>
             <v-card-text class="text-body-1">
-                2023 - 이플렛 영어교재출판 (60종)<br>
-                2020 - 이플렛 영어교재 및 교구개발<br>
-                2019 - 로그아이1.0 영어교재출판 <br>
-                2006 - 이지잉글리쉬 영어교재 출판<br>
-                2005 - 이지 화상영어센타 외국현지 법인설립<br>
-                2002 - 이지아이외국어학원 설립<br>
-                2001 - 이지아이입시학원 설립<br>
+                <p>2023 - 이플렛 영어교재출판 (60종)</p>
+                <p>2020 - 이플렛 영어교재 및 교구개발</p>
+                <p>2019 - 로그아이1.0 영어교재출판 </p>
+                <p>2006 - 이지잉글리쉬 영어교재 출판</p>
+                <p>2005 - 이지 화상영어센타 외국현지 법인설립</p>
+                <p>2002 - 이지아이외국어학원 설립</p>
+                <p>2001 - 이지아이입시학원 설립</p>
             </v-card-text>
         </v-card>
     </v-container>
