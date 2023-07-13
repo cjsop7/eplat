@@ -7,10 +7,16 @@ const userprofile = ref(profile);
 
 <template>
   <div>
-    <v-btn>Introduction</v-btn>
-    <v-btn>My Page</v-btn>
-    <v-btn>Program</v-btn>
-    <v-btn>Support</v-btn>
+    <!-- <v-list class="transparent">
+      <v-list-item>Introduction</v-list-item>
+      <v-list-item>My Page</v-list-item>
+      <v-list-item to="/program">Program</v-list-item>
+      <v-list-item>Support</v-list-item>
+    </v-list> -->
+    <v-btn @click="this.$router.push('/introduction')">Introduction</v-btn>
+    <v-btn @click="this.$router.push('/my-page')">My Page</v-btn>
+    <v-btn @click="this.$router.push('/program')">Program</v-btn>
+    <v-btn @click="this.$router.push('/support')">Support</v-btn>
     <!-- ---------------------------------------------- -->
     <!-- User Profile -->
     <!-- ---------------------------------------------- -->

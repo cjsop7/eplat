@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import firstImage from '@/assets/first.jpg'
-import secondImage from '@/assets/second.jpg'
-import thirdImage from '@/assets/third.jpg'
+import firstImage from '@/assets/images/home/first.jpg'
+import secondImage from '@/assets/images/home/second.jpg'
+import thirdImage from '@/assets/images/home/third.jpg'
 
 // const slides = ref(['first','second','third'])
 const slides = ref([firstImage, secondImage, thirdImage])

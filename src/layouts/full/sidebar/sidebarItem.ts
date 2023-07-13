@@ -1,32 +1,22 @@
 export default [
   {
-    title: "Dashboard",
-    icon: "mdi-view-dashboard-outline",
-    to: "/dashboard",
+    title: "Introduction",
+    icon: "mdi-file-document",
+    to: "/introduction",
   },
   {
-    title: "Alert",
-    icon: "mdi-alert-circle-outline",
-    to: "/ui-components/alert",
+    title: "My Page",
+    icon: "mdi-account",
+    to: "/my-page",
   },
   {
-    title: "Buttons",
-    icon: "mdi-radiobox-blank",
-    to: "/ui-components/buttons",
+    title: "Program",
+    icon: "mdi-code-braces",
+    to: "/program",
   },
   {
-    title: "Cards",
-    icon: "mdi-card-outline",
-    to: "/ui-components/cards",
-  },
-  {
-    title: "Menus",
-    icon: "mdi-form-dropdown",
-    to: "/ui-components/menus",
-  },
-  {
-    title: "Tables",
-    icon: "mdi-table",
-    to: "/ui-components/tables",
+    title: "Support",
+    icon: "mdi-lifebuoy",
+    to: "/support",
   },
 ];

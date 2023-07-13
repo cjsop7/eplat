@@ -51,6 +51,30 @@ const router = createRouter({
           component: () =>
             import("@/views/ui-components/Tables.vue"),
         },
+        {
+          name: "Introduction",
+          path: "/introduction",
+          component: () =>
+            import("@/views/Introduction.vue"),
+        },
+        {
+          name: "My Page",
+          path: "/my-page",
+          component: () =>
+            import("@/views/MyPage.vue"),
+        },
+        {
+          name: "Program",
+          path: "/program",
+          component: () =>
+            import("@/views/Program.vue"),
+        },
+        {
+          name: "Support",
+          path: "/support",
+          component: () =>
+            import("@/views/Support.vue"),
+        },
       ],
     },
   ],
