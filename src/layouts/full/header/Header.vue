@@ -13,10 +13,10 @@ const userprofile = ref(profile);
       <v-list-item to="/program">Program</v-list-item>
       <v-list-item>Support</v-list-item>
     </v-list> -->
-    <v-btn @click="this.$router.push('/introduction')">Introduction</v-btn>
-    <v-btn @click="this.$router.push('/my-page')">My Page</v-btn>
-    <v-btn @click="this.$router.push('/program')">Program</v-btn>
-    <v-btn @click="this.$router.push('/support')">Support</v-btn>
+    <v-btn @click="$router.push('/introduction')">Introduction</v-btn>
+    <v-btn @click="$router.push('/my-page')">My Page</v-btn>
+    <v-btn @click="$router.push('/program')">Program</v-btn>
+    <v-btn @click="$router.push('/support')">Support</v-btn>
     <!-- ---------------------------------------------- -->
     <!-- User Profile -->
     <!-- ---------------------------------------------- -->
